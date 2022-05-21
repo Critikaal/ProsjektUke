@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+
+<!DOCTYPE html>
+<html>
+<title>Unreal Engine Veiledning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Blir brukt for å hente hamburger liste ikonet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- w3schools sin css som jeg bruker for å få topbaren og sidebaren til å virke som jeg vil -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Min egen CSS for å endre utseende på ting -->
+<link rel="stylesheet" href="Styling.css">
+
+<body>
+<!-- Jeg brukte denne stylen til å få bildene sentralisert med å bruke auto som automatisk justerer marginen basert på viewport størrelsen (Skjermen) -->
+  <style>
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+
+<!-- Sidebar, visuelt tatt fra w3schools, dette er siden det er nøyaktig sånn jeg vil siden skal se ut. Den setter opp en Class som holder seg til venstre side av skjermen, dermed er  den lignende en navigation bar på siden. -->
+<div class="w3-sidebar w3-Indigo w3-bar-block" style="width:10%"  id="mySidebar">
+  <h3 class="w3-bar-item">Meny</h3>
+  <!-- Dette er funksjonen som skulle tilhøre hamburger ikonet sin funksjon til å tilkalle de andre stegene. Dette var et feilet prosjekt men jeg lar koden ligge i håp om at noen kan fikse det -->
+  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i> 
+  </a> -->
+  <!-- Dette er "knappene" du kan trykke på i sidebaren som tar deg til de forskjellige stegene  -->
+  <a href="index.html" class="w3-bar-item w3-button">Intro</a>
+  <a href="Steg 1.html" class="w3-bar-item w3-button">Steg 1: Epic Games</a>
+  <a href="Steg 2.html" class="w3-bar-item w3-button">Steg 2: Innlogging</a>
+  <a href="Steg 3.html" class="w3-bar-item w3-button">Steg 2.1: Lage konto</a>
+  <a href="Steg 4.html" class="w3-bar-item w3-button">Steg 3: Unreal Engine</a>
+</div>
+
+<!-- I dette feltet er der hvor hoved innholdet av siden skal ståd, altså veiledningen -->
+<div style="margin-left:10%">
+<!-- Dette er topp baren som sier tittelen på steget pluss gir den en fin nyanse farge-->
+<div class="w3-container w3-blue-gray">
+  <h1>Hjemmeside</h1>
+
+</div>
+
+<img src="img/Unreal.png" alt="Unreal Engine Logo" width="50%">
+
+<div class="w3-container">
+<h2>Introduksjon</h2>
+<p>På denne nettsiden skal jeg veilede deg igjennom hvordan man laster ned Unreal Engine.</p>
+<p>Men, hva er Unreal Engine?</p>
+<p>Jo, det er en spillmotor som hovedsaklig blir brukt til å lage spill, som <a href="https://www.epicgames.com/fortnite/en-US/home" class="noPadding">Fortnite</a>, <a href="https://xcom.com" class="noPadding">XCOM 2</a> eller <a href="https://store.steampowered.com/app/1054990/Race_With_Ryan/" class="noPadding">Race with Ryan</a>.</p>
+<p>Programmet kan også bli brukt til å lage filmer som kort filmene, <a href="https://www.youtube.com/watch?v=P3LZjxJj6YA" class="noPadding">Hello World</a>, <a href="https://www.youtube.com/watch?v=pulYEaP3L0Q" class="noPadding">Terra</a> og <a href="https://www.youtube.com/watch?v=FxzezGZeHwE" class="noPadding">K.I.T</a>.</p>
+<!-- Dette er knappen som tar til neste steg av veiledningen. "&raquo;" er de 2 pilene på knappen-->
+<a href="Steg 1.html" class="next">Neste &raquo;</a>
+<p></p>
+</div>
+
+</div>
+<!-- Denne funksjonen skulle bli brukt til å endre navnet på classen til sidebaren til w3-sidebar w3-Indigo w3-bar-block responsive. Men noe virket ikke i den koden så dette er det jeg har.-->
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySidebar");
+    if (x.className === "w3-sidebar w3-Indigo w3-bar-block") {
+      x.className += " responsive";
+    } else {
+      x.className = "w3-sidebar w3-Indigo w3-bar-block";
+    }
+  }
+  </script>
+      
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+
+<!DOCTYPE html>
+<html>
+<title>Unreal Engine Veiledning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Blir brukt for å hente hamburger liste ikonet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- w3schools sin css som jeg bruker for å få topnav og sidebaren til å virke som jeg vil -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Min egen CSS for å endre utseende på ting -->
+<link rel="stylesheet" href="Styling.css">
+
+<body>
+<!-- Jeg brukte denne stylen til å få bildene sentralisert med å bruke auto som automatisk justerer marginen basert på viewport størrelsen (Skjermen) -->
+  <style>
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+
+<!-- Sidebar, visuelt tatt fra w3schools, dette er siden det er nøyaktig sånn jeg vil siden skal se ut. Den setter opp en Class som holder seg til venstre side av skjermen, dermed er  den lignende en navigation bar på siden. -->
+<div class="w3-sidebar w3-Indigo w3-bar-block" style="width:10%"  id="mySidebar">
+  <h3 class="w3-bar-item">Meny</h3>
+  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i> 
+  </a> -->
+  <a href="index.html" class="w3-bar-item w3-button">Intro</a>
+  <a href="Steg 1.html" class="w3-bar-item w3-button">Steg 1: Epic Games</a>
+  <a href="Steg 2.html" class="w3-bar-item w3-button">Steg 2: Innlogging</a>
+  <a href="Steg 3.html" class="w3-bar-item w3-button">Steg 2.1: Lage konto</a>
+  <a href="Steg 4.html" class="w3-bar-item w3-button">Steg 3: Unreal Engine</a>
+</div>
+
+<!-- I dette feltet er der hvor hoved innholdet av siden skal ståd, altså veiledningen -->
+<div style="margin-left:10%">
+<!-- Dette er topp baren som sier tittelen på steget pluss gir den en fin nyanse farge-->
+<div class="w3-container w3-blue-gray">
+  <h1>Steg 2: Innlogging</h1>
+
+</div>
+
+<img src="img/Steg2.png" alt="Unreal Engine Logo" width="75%">
+
+<div class="w3-container">
+<h2>Logg inn på Epic Games</h2>
+<p>Så logger du inn på Epic Games via hvilken som helst av måtene over.</p>
+<p>Hvis du ønsker å ikke logge inn kan du trykke på "Sign in Later". Hvis du ikke har en konto på noen av valgene over eller vil lage en Epic Games konto spesifik for Unreal Engine kan du gå til neste steg.</p>
+<p>Du kan klikke <a href="Steg 4.html" class="noPadding">her</a> hvis du har logget inn allerde.</p>
+
+<a href="Steg 1.html" class="previous">&laquo; Forrige</a>
+<a href="Steg 3.html" class="next">Neste &raquo;</a>
+<p></p>
+</div>
+
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySidebar");
+    if (x.className === "w3-sidebar w3-Indigo w3-bar-block") {
+      x.className += " responsive";
+    } else {
+      x.className = "w3-sidebar w3-Indigo w3-bar-block";
+    }
+  }
+  </script>
+      
+</body>
+</html>
